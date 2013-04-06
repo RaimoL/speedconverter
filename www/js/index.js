@@ -59,5 +59,7 @@ function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
 	var mmmm=60*(document.getElementById("starttah").value-hh);
 	var mm=Math.floor(mmmm);
-	var ss=Math.floor(60*(mmmm-mm);
+	document.getElementById("starttas").value=Math.floor(60*(mmmm-mm);
+	document.getElementById("starttah").value=hh;
+	document.getElementById("starttam").value=mm;
 };
