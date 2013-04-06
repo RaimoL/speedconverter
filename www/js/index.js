@@ -53,6 +53,7 @@ function counttime() {
 function countleg() {
  	countdestime();
        	document.getElementById("lega").value=document.getElementById("starttah").value/document.getElementById("speeda").value;
+	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 };
 function countdestime() {
        	document.getElementById("starttah").value=parseFloat(document.getElementById("starttah").value)+parseFloat(document.getElementById("starttam").value/60)+parseFloat(document.getElementById("starttas").value/3600);
@@ -61,7 +62,7 @@ function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
  	var mmmm=60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh));
  	var mm=Math.floor(mmmm);
- 	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm));
+ 	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm)));
  	document.getElementById("starttah").value=hh;
  	document.getElementById("starttam").value=mm;
 };
