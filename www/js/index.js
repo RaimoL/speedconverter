@@ -53,7 +53,7 @@ function countleg() {
        	document.getElementById("lega").value=document.getElementById("starttah").value/document.getElementById("speeda").value;
 };
 function countdestime() {
-       	document.getElementById("starttah").value=document.getElementById("starttah").value+document.getElementById("starttam").value/60+document.getElementById("starttas").value/3600;
+       	document.getElementById("starttah").value=document.getElementById("starttah").value+(document.getElementById("starttam").value/60.0)+(document.getElementById("starttas").value/3600.0);
 };
 function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
