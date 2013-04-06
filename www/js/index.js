@@ -47,7 +47,7 @@ function countspeed() {
 }
 function counttime() {
        	document.getElementById("starttah").value=document.getElementById("lega").value/document.getElementById("speeda").value;
-	countinttime(
+	countinttime();
 }
 function countleg() {
 	countdestime();
