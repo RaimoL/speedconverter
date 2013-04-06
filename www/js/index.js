@@ -39,4 +39,8 @@ var app = {
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
     }
+    countspeed: function(km,min) {
+        // 
+        document.getElementById("speeda").value=km/min;
+    }
 };

@@ -28,14 +28,14 @@
     <body>
       <div class="app">
        <h1>Speed Calculator</h1>
-           <p> Start time: <input type="number" name="start_time" value="12">
+           <p> Start time: <input id="startta" type="number" name="startti" value="12">
              <button type="button" onclick="alert('Hello world!')">Solve Time</button>
            </p>
-           <p> km: <input type="number" name="leg" value="20"> 
+           <p> km: <input id="numbera" type="number" name="leg" value="20"> 
              <button type="button" onclick="alert('Hello world!')">Solve km</button>
            </p>
-           <p> km/h: <input type="number" name="speed" value="15">
-             <button type="button" onclick="alert('Hello world!')">Solve km/h</button>
+           <p> km/h: <input id="speeda" type="number" name="speed" value="15">
+             <button type="button" onclick="app.countspeed(leg,startti)">Solve km/h</button>
            </p>
         </div>
       <script type="text/javascript" src="phonegap.js"></script>
