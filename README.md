@@ -1,6 +1,6 @@
-# Hello World PhoneGap Application
+# Speed Converter PhoneGap Application
 
-> A Hello World application built with PhoneGap
+> A Speed Converter application built with PhoneGap
 
 ## PhoneGap Build
 
