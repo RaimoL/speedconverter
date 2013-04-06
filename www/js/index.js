@@ -42,7 +42,7 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	document.getElementById("speeda").valueOf(value=document.getElementById("lega").value)/valueOf(document.getElementById("starttah").value);
+	document.getElementById("speeda").value=document.getElementById("lega").value)/document.getElementById("starttah").value;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 };
 /*
@@ -56,7 +56,7 @@ function countspeed() {
  * };
  */
 function countdestime() {
-       	document.getElementById("starttah").value=valueOf(document.getElementById("starttah").value)+valueOf(document.getElementById("starttam").value/60)+valueOf(document.getElementById("starttas").value/3600);
+       	document.getElementById("starttah").value=Number(document.getElementById("starttah").value)+Number(document.getElementById("starttam").value/60)+NUmber(document.getElementById("starttas").value/3600);
 };
 /*
  * function countinttime() {
