@@ -42,5 +42,7 @@ var app = {
     countspeed: function(km,min) {
         // 
         document.getElementById("speeda").value=km/min;
+        alert('Hello function');
+        alert(document.getElementById("speeda").value);
     }
 };
