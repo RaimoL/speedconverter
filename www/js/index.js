@@ -42,7 +42,7 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
+	document.getElementById("speeda").valueOf(value=document.getElementById("lega").value)/valueOf(document.getElementById("starttah").value);
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 };
 /*
