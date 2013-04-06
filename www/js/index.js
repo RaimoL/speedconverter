@@ -56,7 +56,7 @@ function countspeed() {
  * };
  */
 function countdestime() {
-       	document.getElementById("starttah").value=document.getElementById("starttah").value+document.getElementById("starttam").value/60+document.getElementById("starttas").value/3600;
+       	document.getElementById("starttah").value=parseFloat(document.getElementById("starttah").value)+parseFloat(document.getElementById("starttam").value/60)+parseFloat(document.getElementById("starttas").value/3600);
 };
 /*
  * function countinttime() {
