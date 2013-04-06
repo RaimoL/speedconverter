@@ -24,8 +24,15 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Speed Calculator</title>
-      <script type="text/javascript" src="phonegap.js"></script>
-      <script type="text/javascript" src="js/index.js"></script>
+<script>
+function countspeed() {
+        // 
+	alert('Hello function1');
+        document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("strtta").value;
+        alert('Hello function2');
+        alert(document.getElementById("speeda").value);
+}
+</script>
     </head>
     <body>
       <script type="text/javascript" src="phonegap.js"></script>
@@ -39,7 +46,7 @@
              <button type="button" onclick="alert('Hello world!')">Solve km</button>
            </p>
            <p> km/h: <input id="speeda" type="number" name="speed" value="15">
-             <button type="button" onclick="app.countspeed()">Solve km/h</button>
+             <button type="button" onclick="countspeed()">Solve km/h</button>
            </p>
         </div>
       <script type="text/javascript">
