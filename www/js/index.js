@@ -42,23 +42,21 @@ var app = {
 };
 function countspeed() {
 	alert("Yksi");
-/* 	countdestime();
- */
+ 	countdestime();
        	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
 };
 /*
  * function counttime() {
- *       	document.getElementById("starttah").value=document.getElementById * ("lega").value/document.getElementById("speeda").value;
+ *       	document.getElementById("starttah").value=document.getElementById("lega").value/document.getElementById("speeda").value;
  *	countinttime();
  * };
  * function countleg() {
  * 	countdestime();
- *       	document.getElementById("lega").value=document.getElementById * ("starttah").value/document.getElementById("speeda").value;
+ *       	document.getElementById("lega").value=document.getElementById("starttah").value/document.getElementById("speeda").value;
  * };
- * function countdestime() {
- *       	document.getElementById("starttah").value=document.getElementById
- * ("starttah").value * +(document.getElementById("starttam").value/60.0)+(document.getElementById * ("starttas").value/3600.0);
- * };
+function countdestime() {
+       	document.getElementById("starttah").value=document.getElementById("starttah").value+(document.getElementById("starttam").value/60.0)+(document.getElementById("starttas").value/3600.0);
+};
  * function countinttime() {
  *       	var hh=Math.floor(document.getElementById("starttah").value);
  * 	var mmmm=60*(document.getElementById("starttah").value-hh);
