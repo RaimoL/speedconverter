@@ -40,3 +40,6 @@ var app = {
         completeElem.className = completeElem.className.split('hide').join('');
     }
 };
+function countspeed() {
+       	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("startta").value;
+};

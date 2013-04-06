@@ -25,14 +25,9 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Speed Calculator</title>
 <script>
-function countspeed() {
-       	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("startta").value;
-}
 </script>
     </head>
     <body>
-      <script type="text/javascript" src="phonegap.js"></script>
-      <script type="text/javascript" src="js/index.js"></script>
       <div class="app">
        <h1>Speed Calculator</h1>
            <p> Start time: <input id="startta" type="number" name="startti" value="12">
@@ -45,6 +40,8 @@ function countspeed() {
              <button type="button" onclick="countspeed()">Solve km/h</button>
            </p>
         </div>
+      <script type="text/javascript" src="phonegap.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
       <script type="text/javascript">
            app.initialize();
       </script>
