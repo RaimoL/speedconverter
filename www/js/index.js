@@ -54,9 +54,11 @@ function countspeed() {
  * 	countdestime();
  *       	document.getElementById("lega").value=document.getElementById("starttah").value/document.getElementById("speeda").value;
  * };
+ */
 function countdestime() {
        	document.getElementById("starttah").value=document.getElementById("starttah").value+document.getElementById("starttam").value/60+document.getElementById("starttas").value/3600;
 };
+/*
  * function countinttime() {
  *       	var hh=Math.floor(document.getElementById("starttah").value);
  * 	var mmmm=60*(document.getElementById("starttah").value-hh);
