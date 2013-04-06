@@ -39,10 +39,11 @@ var app = {
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
     }
-    countspeed: function(km,min) {
+    countspeed: function() {
         // 
-        document.getElementById("speeda").value=km/min;
-        alert('Hello function');
+	alert('Hello function1');
+        document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("strtta").value;
+        alert('Hello function2');
         alert(document.getElementById("speeda").value);
     }
 };
