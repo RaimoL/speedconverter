@@ -42,8 +42,7 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	alert("Yksi");
-       	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
+	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
 };
 /*
  * function counttime() {
