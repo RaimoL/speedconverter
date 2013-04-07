@@ -50,7 +50,7 @@ function countspeed() {
 	var speedmkm=1000/speedmm;
 	var speedmkmm=Math.floor(speedmkm);
 	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.0001);
-	document.getElementById("speedm").value=toString(round(10*speedms)/10)+" m/s, "+toString(round(speedmm))+" m/min, "+toString(speedmkmm)"+":"+toString(speedmkms)+" min/km";
+	document.getElementById("speedm").value=toString(round(10*speedms)/10)+" m/s, "+toString(round(speedmm))+" m/min, "+toString(speedmkmm)+":"+toString(speedmkms)+" min/km";
 };
 
 function counttime() {
