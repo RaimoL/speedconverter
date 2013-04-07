@@ -85,4 +85,5 @@ function countinttime() {
  	document.getElementById("starttah").value=hhh.toFixed(0);
  	document.getElementById("starttam").value=mmi.toFIxed(0);
 	document.getElementById("starttas").value=mmss.toFixed(0);
+	alarm("Done");
 };
