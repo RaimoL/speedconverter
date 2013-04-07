@@ -42,14 +42,15 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	document.getElementById("speeda").value=round(10*document.getElementById("lega").value/document.getElementById("starttah").value)/10;
+	var speedms=document.getElementById("lega").value/document.getElementById("starttah").value;
+	document.getElementById("speeda").value=round(10*speedms)/10;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
-	var speedms=document.getElementById("speeda").value/3.6;
+	speedms=speedms/3.6;
 	var speedmm=60*speedms;
 	var speedmkm=1000/speedmm;
 	var speedmkmm=Math.floor(speedmkm);
 	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.0001);
-	document.getElementById("speedm").value=round(10*speedms)/10 + " m/s, "+round(speedmm)+" m/min, "+speedmkmm"+":"+speedmkms+" min/km";
+	document.getElementById("speedm").value=toString(round(10*speedms)/10)+" m/s, "+toString(round(speedmm))+" m/min, "+toString(speedmkmm)"+":"+toString(speedmkms)+" min/km";
 };
 
 function counttime() {
