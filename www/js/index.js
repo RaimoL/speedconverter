@@ -46,8 +46,8 @@ function countspeed() {
 	document.getElementById("speeda").value=speedms.toFixed(1);
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 	speedms=speedms/3.6;
-	var speedmm=60*speedms;
-	var speedmkm=1000/speedmm;
+	var speedmm=parseFloat(60*speedms);
+	var speedmkm=parseFloat(1000/speedmm);
 	var speedmkmm=Math.floor(speedmkm);
 	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.00001);
 	if (speedmkms=60)
