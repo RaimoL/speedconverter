@@ -74,7 +74,7 @@ function countdestime() {
 };
 function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
- 	var mmmm=60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh));
+ 	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh)));
  	var mm=Math.floor(mmmm);
  	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001);
 	if (document.getElementById("starttas").value=60)
