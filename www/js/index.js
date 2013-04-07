@@ -76,11 +76,13 @@ function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
  	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh)));
  	var mm=Math.floor(mmmm);
- 	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001);
-	if (document.getElementById("starttas").value=60)
+	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001)
+ 	if (mmss>60)
 		{
-		document.getElementById("starttas").value=0;
+		mmss=0;
+		mm=mm+1;
 		}
- 	document.getElementById("starttah").value=hh;
- 	document.getElementById("starttam").value=Math.floor(mmmm+0.00001);
+ 	document.getElementById("starttah").value=hh.toFixed(0);
+ 	document.getElementById("starttam").value=mm.toFIxed(0);
+	document.getElementById("starttas").value=mmss.toFixed(0);
 };
