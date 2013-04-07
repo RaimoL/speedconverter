@@ -73,16 +73,16 @@ function countdestime() {
        	document.getElementById("starttah").value=parseFloat(document.getElementById("starttah").value)+parseFloat(document.getElementById("starttam").value/60)+parseFloat(document.getElementById("starttas").value/3600);
 };
 function countinttime() {
-       	var hh=Math.floor(document.getElementById("starttah").value);
- 	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh)));
- 	var mm=Math.floor(mmmm);
-	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001)
+       	var hhh=parceFloat(document.getElementById("starttah").value);
+ 	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-Math.floor(hhh)));
+ 	var mmi=Math.floor(mmmm);
+	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mmi))+0.00001)
  	if (mmss>=60)
 		{
 		mmss=0;
-		mm=mm+1;
+		mmi=mmi+1;
 		}
- 	document.getElementById("starttah").value=hh.toFixed(0);
- 	document.getElementById("starttam").value=mm.toFIxed(0);
+ 	document.getElementById("starttah").value=hhh.toFixed(0);
+ 	document.getElementById("starttam").value=mmi.toFIxed(0);
 	document.getElementById("starttas").value=mmss.toFixed(0);
 };
