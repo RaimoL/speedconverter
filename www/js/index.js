@@ -82,7 +82,7 @@ function countinttime() {
 		mmss=0;
 		mmi=mmi+1;
 		}
- 	document.getElementById("starttah").value=hhh.toFixed(0);
- 	document.getElementById("starttam").value=mmi.toFIxed(0);
-	document.getElementById("starttas").value=mmss.toFixed(0);
+ 	document.getElementById("starttah").value=Math.floor(hhh);
+ 	document.getElementById("starttam").value=Math.floor(mmi);
+	document.getElementById("starttas").value=Math.floor(mmss);
 };
