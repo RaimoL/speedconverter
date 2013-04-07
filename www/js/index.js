@@ -53,6 +53,7 @@ function countspeed() {
 	if (speedmkms=60)
 		{
 		speedmkms=0;
+		speedmkmm=speedmkmm+1;
 		}
 	document.getElementById("speedm").value=speedms.toFixed(1)+" m/s, "+speedmm.toFixed(0)+" m/min, "+speedmkmm+":"+speedmkms+" min/km";
 };
@@ -63,7 +64,7 @@ function counttime() {
 };
 function countleg() {
  	countdestime();
-       	document.getElementById("lega").value=Math.round(document.getElementById("starttah").value*document.getElementById("speeda").value)/10;
+       	document.getElementById("lega").value=Math.round(10*document.getElementById("starttah").value*document.getElementById("speeda").value)/10;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 };
 function countdestime() {
