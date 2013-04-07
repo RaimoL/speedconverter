@@ -48,14 +48,14 @@ function countspeed() {
 	speedms=speedms/3.6;
 	var speedmm=parseFloat(60*speedms);
 	var speedmkm=parseFloat(1000/speedmm);
-	var speedmkmm=speedmkm.toFixed(0);
+	var speedmkmm=Math.floor(speedmkm);
 	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.00001);
 	if (speedmkms=60)
 		{
 		speedmkms=0;
 		speedmkmm=speedmkmm+1;
 		}
-	document.getElementById("speedm").value=speedms.toFixed(1)+" m/s, "+speedmm.toFixed(0)+" m/min, "+speedmkmm+":"+speedmkms+" min/km";
+	document.getElementById("speedm").value=speedms.toFixed(1)+" m/s, "+speedmm.toFixed(0)+" m/min, "+speedmkmm.toFixed(0)+":"+speedmkms.toFixed(0)+" min/km";
 };
 
 function counttime() {
