@@ -50,7 +50,7 @@ function countspeed() {
 	var speedmkm=parseFloat(1000.0/speedmm);
 	var speedmkmm=Math.floor(speedmkm);
 	var speedmkms=parseFloat(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.00001);
-	if (speedmkms>60)
+	if (speedmkms>=60)
 		{
 		speedmkms=0;
 		speedmkmm=speedmkmm+1;
@@ -59,7 +59,7 @@ function countspeed() {
 };
 
 function counttime() {
-       	document.getElementById("starttah").value=document.getElementById("lega").value/document.getElementById("speeda").value;
+       	document.getElementById("starttah").value=parseFloat(document.getElementById("lega").value/document.getElementById("speeda").value);
 	countinttime();
 	document.getElementById("speedm").value="  ";
 };
@@ -77,7 +77,7 @@ function countinttime() {
  	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh)));
  	var mm=Math.floor(mmmm);
 	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001)
- 	if (mmss>60)
+ 	if (mmss>=60)
 		{
 		mmss=0;
 		mm=mm+1;
