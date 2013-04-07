@@ -73,7 +73,7 @@ function countdestime() {
        	document.getElementById("starttah").value=parseFloat(document.getElementById("starttah").value)+parseFloat(document.getElementById("starttam").value/60)+parseFloat(document.getElementById("starttas").value/3600);
 };
 function countinttime() {
-       	var hhh=parceFloat(document.getElementById("starttah").value);
+       	var hhh=parseFloat(document.getElementById("starttah").value);
  	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-Math.floor(hhh)));
  	var mmi=Math.floor(mmmm);
 	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mmi))+0.00001);
