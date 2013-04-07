@@ -44,7 +44,7 @@ function countspeed() {
 	countdestime();
 	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
-	document.getElementById("speedm").innerHTML=document.getElementById("speeda").value/36 "m/s, " "m/min, " "min/km ";
+	document.getElementById("speedm").innerHTML=document.getElementById("speeda").value/36 + "m/s, " +"m/min, " +"min/km";
 };
 
 function counttime() {
