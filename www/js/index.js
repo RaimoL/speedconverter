@@ -42,7 +42,7 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	var speedms=document.getElementById("lega").value/document.getElementById("starttah").value;
+	var speedms=parseFloat(document.getElementById("lega").value/document.getElementById("starttah").value);
 	document.getElementById("speeda").value=speedms.toFixed(1);
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 	speedms=speedms/3.6;
