@@ -60,11 +60,13 @@ function countspeed() {
 function counttime() {
        	document.getElementById("starttah").value=document.getElementById("lega").value/document.getElementById("speeda").value;
 	countinttime();
+	countspeed();
 };
 function countleg() {
  	countdestime();
        	document.getElementById("lega").value=Math.round(document.getElementById("starttah").value*document.getElementById("speeda").value)/10;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
+	countspeed();
 };
 function countdestime() {
        	document.getElementById("starttah").value=parseFloat(document.getElementById("starttah").value)+parseFloat(document.getElementById("starttam").value/60)+parseFloat(document.getElementById("starttas").value/3600);
