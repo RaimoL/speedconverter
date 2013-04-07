@@ -54,7 +54,7 @@ function countspeed() {
 		{
 		speedmkms=0;
 		}
-	document.getElementById("speedm").value=speedms.toFixed(1)+" m/s, "+speedmm.toFixed(1)+" m/min, "+speedmkmm+":"+speedmkms+" min/km";
+	document.getElementById("speedm").value=speedms.toFixed(1)+" m/s, "+speedmm.toFixed(0)+" m/min, "+speedmkmm+":"+speedmkms+" min/km";
 };
 
 function counttime() {
