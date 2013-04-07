@@ -42,9 +42,14 @@ var app = {
 };
 function countspeed() {
 	countdestime();
-	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
+	document.getElementById("speeda").value=round(10*document.getElementById("lega").value/document.getElementById("starttah").value)/10;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
-	document.getElementById("speedm").value=document.getElementById("speeda").value/36 + "m/s, " +"m/min, " +"min/km";
+	var speedms=document.getElementById("speeda").value/3.6;
+	var speedmm=60*speedms;
+	var speedmkm=1000/speedmm;
+	var speedmkmm=Math.floor(speedmkm);
+	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.0001);
+	document.getElementById("speedm").value=round(10*speedms)/10 + " m/s, "+round(speedmm)+" m/min, "+speedkmm"+":"+speedmkms+" min/km";
 };
 
 function counttime() {
@@ -53,7 +58,7 @@ function counttime() {
 };
 function countleg() {
  	countdestime();
-       	document.getElementById("lega").value=document.getElementById("starttah").value*document.getElementById("speeda").value;
+       	document.getElementById("lega").value=round(10*document.getElementById("starttah").value*document.getElementById("speeda").value)/10;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
 };
 function countdestime() {
