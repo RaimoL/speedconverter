@@ -76,7 +76,7 @@ function countinttime() {
        	var hhh=parceFloat(document.getElementById("starttah").value);
  	var mmmm=parseFloat(60*(parseFloat(document.getElementById("starttah").value)-Math.floor(hhh)));
  	var mmi=Math.floor(mmmm);
-	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mmi))+0.00001)
+	var mmss=parseFloat(60*(parseFloat(mmmm)-parseFloat(mmi))+0.00001);
  	if (mmss>=60)
 		{
 		mmss=0;
@@ -85,5 +85,4 @@ function countinttime() {
  	document.getElementById("starttah").value=hhh.toFixed(0);
  	document.getElementById("starttam").value=mmi.toFIxed(0);
 	document.getElementById("starttas").value=mmss.toFixed(0);
-	alarm("Done");
 };
