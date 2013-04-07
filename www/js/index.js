@@ -44,6 +44,7 @@ function countspeed() {
 	countdestime();
 	document.getElementById("speeda").value=document.getElementById("lega").value/document.getElementById("starttah").value;
 	document.getElementById("starttah").value=Math.floor(document.getElementById("starttah").value);
+	document.getElementById("speedm").innerHTML=document.getElementById("speeda").value/36 "m/s, " "m/min, " "min/km ";
 };
 
 function counttime() {
@@ -62,7 +63,7 @@ function countinttime() {
        	var hh=Math.floor(document.getElementById("starttah").value);
  	var mmmm=60*(parseFloat(document.getElementById("starttah").value)-parseFloat(hh));
  	var mm=Math.floor(mmmm);
- 	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm)));
+ 	document.getElementById("starttas").value=Math.floor(60*(parseFloat(mmmm)-parseFloat(mm))+0.00001);
  	document.getElementById("starttah").value=hh;
- 	document.getElementById("starttam").value=mm;
+ 	document.getElementById("starttam").value=Math.floor(mmmm+0.00001);
 };
