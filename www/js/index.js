@@ -49,8 +49,8 @@ function countspeed() {
 	var speedmm=parseFloat(60*speedms);
 	var speedmkm=parseFloat(1000.0/speedmm);
 	var speedmkmm=Math.floor(speedmkm);
-	var speedmkms=Math.floor(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.00001);
-	if (speedmkms=60)
+	var speedmkms=parseFloat(60*(parseFloat(speedmkm)-parseFloat(speedmkmm))+0.00001);
+	if (speedmkms>60)
 		{
 		speedmkms=0;
 		speedmkmm=speedmkmm+1;
